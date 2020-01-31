@@ -1,0 +1,136 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\documentclass{res} 
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\setlength{\textheight}{9.9in} % increase text height to fit on 1-page 
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\setstretch{1.2} 
+\usepackage{Sweave}
+\begin{document} 
+\input{Resume-concordance}
+
+%\name{Daniel H. Stahl\\[12pt]}     % the \\[12pt] adds a blank
+  			        % line after name      
+\moveleft.5\hoffset\centerline{ \large\bf Daniel H. Stahl}
+
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+
+\moveleft.5\hoffset\centerline{6107 Retreat Circle Birmingham Al 35242}
+\moveleft.5\hoffset\centerline{(704) 451-8923 danstahl1138@gmail.com}
+\moveleft.5\hoffset\centerline{http://danielhstahl.com }
+\moveleft.5\hoffset\centerline{https://github.com/phillyfan1138}
+\moveleft.5\hoffset\centerline{https://www.linkedin.com/in/daniel-stahl-6685a52a}
+
+
+%\address{\\6224 Gold Wagon Ln, \\Mint Hill, NC 28227\\(704) 451-8923  \\danstahl1138@gmail.com}
+                                
+\begin{resume}
+\section{EXPERIENCE} {\sl Senior Model Validation Analyst} \hfill November 2016-Present \\
+Regions Bank, Birmingham, AL
+\begin{itemize}
+\item Lead development team for an app to facilicate model validation
+\item Lead annual reviews and exams of relationship profitability tools and market risk models 
+\item Validated the theoretical design for the ALLL model
+
+\end{itemize}
+
+\section{EXPERIENCE} {\sl Senior Manager of Portfolio Analytics} \hfill May 2016-November 2016 \\
+Global Lending Services, Greenville, SC
+
+\begin{itemize}
+\item Created time-to-default models for subprime auto loans
+\item Created time-dependent transition matrix models for estimating losses to the subprime loan portfolio
+\item Monte Carlo engine for simulating portfolio loss to arbitrary future times
+\item Transitioned model development to Azure for transparency and efficiency
+\end{itemize}
+
+\section{EXPERIENCE} {\sl Internal Auditor/Senior Internal Auditor in Audit Analytics} \hfill July 2014-Present \\
+BB\&T, Winston-Salem, NC
+
+ \begin{itemize}  %\itemsep -2pt %reduce space between items
+                 \item As part of Model Risk Management audit, reviewed and re-performed model validations for a wide variety of bank models including the Market VaR model, the ALLL model, CCAR models, and Economic Capital models.
+                 \begin{itemize}
+                 \item 26 models reviewed with partial re-performance
+                 \item 2 models reviewed with full re-performance including credit Economic Capital 
+                 \end{itemize}
+                 
+                \item  Integral role in developing Audit Analytics into a mature group 
+                
+                \begin{itemize}
+                
+                \item Built and administered databases
+                \item Designed websites for processing request tickets
+                \item Created robust web data analytics tools using SQL server and JavaScript/HTML (Node.js)
+                \item Created automated workflow for creation of audit tests      
+                \item Wrote policy describing Audit Analytics' role and responsibilities
+                \end{itemize}
+\end{itemize}
+\section{EXPERIENCE} {\sl Risk Management Officer} \hfill July 2012-July 2014 \\
+Uwharrie Capital Corp, Albemarle, NC
+
+ \begin{itemize}  %\itemsep -2pt %reduce space between items
+                 \item Responsible for Risk Management of Uwharrie Capital, a bank holding company
+                \item  Sole developer for credit risk models including ALLL
+                \begin{itemize}
+                \item Computed loan portfolio value at risk
+                \item Assigned risk contribution to each credit
+                \end{itemize}
+                \item  Developed and implemented stress tests
+                \begin{itemize}
+                \item Demonstrated the effect of real estate depreciation on the loan portfolio
+                \item Demonstrated the effect of interest rate increases on debt service coverage
+                \end{itemize}
+                \item Reported results to the Board of Directors
+                \end{itemize}
+                
+
+\section{EXPERIENCE} {\sl Model implementations} \hfill 2012-Present 
+\begin{itemize}
+\item Two analytic extensions to credit economic capital models 
+\item Loan pricing models (prepayment and default optionality)
+\item Extensions to the LDA operational risk model (including correlated severity and frequency)
+\item Option pricing models 
+\begin{itemize}
+\item Levy processes including CGMY, Brownian motion, variance gamma
+\item Monte Carlo techniques including variance reduction
+\item Market models including Hull-White, Cox-Ingersoll-Ross, Vasicek
+\item LIBOR Market model
+\item Heath-Jarrow-Morton framework
+\item Inversion techniques including Carr-Madan FFT, Fourier Space-Time Stepping, and COS method
+\item Tree techniques including generic tree pricing for any one-dimensional stochastic differential equation
+\end{itemize}
+\end{itemize}
+
+\section{PUBLICATIONS} {\sl Journal of Credit Risk:} Loss Distributions: Computational Efficiency in an Extended Framework (December 2015).  This paper demonstrates a method of using Fourier transforms to efficiently compute loss densities for granular portfolios.
+\\
+\\
+{\sl Journal of Operational Risk:} Operational Loss with Correlated Frequency and Severity: an Analytical Approach (Forthcoming).  This paper uses the concept of a ``Leverage Neutral'' measure to induce correlation between frequency and severity distributions while retaining computational tractability.
+\section{MAJOR PROJECTS}
+\begin{itemize}
+\item Managed project to deliver policy tests and other risk-based metrics for BB\&T's active directory.  Worked with management and stakeholders to assess requirements and provide status updates.
+\item Managed project to develop credit loss models including marginal risk contributions at the loan level for Uwharrie Capital Corp.  Reported results to the Board of Directors.
+\item Performed myriad personal projects including complex market risk models as evidenced on my GitHub page.
+\end{itemize}
+
+\section{EDUCATION} {\sl Master of Science,} Mathematical Finance \hfill Spring 2013 \\        
+    University of North Carolina at Charlotte  \\ 
+    Charlotte, NC 
+\begin{itemize}  %\itemsep -2pt %reduce space between items
+    \item Classes included stochastic calculus, three courses on option pricing, two courses on time series, numerical solutions to PDEs, Monte Carlo simulations
+    \item 4.0 GPA
+    \end{itemize}
+    {\sl Bachelor of Arts,} Economics \hfill Spring 2011 \\ 
+    Calvin College\\
+    Grand Rapids, MI
+
+\section{COMPUTER SKILLS} {\sl Languages:} SQL, C++, Java, R, Matlab, JavaScript (including ReactJS, AngularJS, MongoDB, NodeJS, EmberJS), CSS (including Bootstrap), HTML\\
+{\sl Operating Systems:} I run Ubuntu (Linux) on my home computer for personal application development.
+
+\section{MISCELLANIOUS} {\sl Member of Toastmasters} Acted as toastmaster, evaluated two speeches, and given six speeches
+
+\end{resume}
+
+\end{document}
